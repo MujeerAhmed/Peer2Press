@@ -1,9 +1,11 @@
 import React from "react";
 import * as Components from './Components';
 import './newStyle.css';
+import { useNavigate } from "react-router-dom";
 
 function Login() {
     const [signIn, toggle] = React.useState(true);
+    const navigate = useNavigate();
     return (
         
         <div className="centered-div">
@@ -24,7 +26,7 @@ function Login() {
                         <Components.Input type='email' placeholder='Email' />
                         <Components.Input type='password' placeholder='Password' />
                         <Components.Anchor href='#'>Forgot your password?</Components.Anchor>
-                        <Components.Button>Sign In</Components.Button>
+                        <Components.Button onClick={() =>{  navigate('/home')}}>Sign In</Components.Button>
                     </Components.Form>
                 </Components.SignInContainer>
 
