@@ -16,13 +16,22 @@ import { blue, grey } from '@mui/material/colors';
 import { Typography } from '@mui/material';
 import CustomButton from '@shared/CustomButton';
 import AppContentArea from '@components/AppContentArea';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
+import Login from './components/LoginPage/Login';
+import MainComponent from './MainComponent';
 
 function App() {
   return (
     <React.Fragment>
       <Box sx={appWrapper}>
-        <Navbar />
-        <Box sx={contentWrapper}>
+        {/* <Navbar /> */}
+        <Router>
+         <Routes>
+           <Route path = {"/login"} element={<Login/>} />
+           <Route path = {"/home"} element={<MainComponent/>} />
+         </Routes>
+        </Router>
+        {/* <Box sx={contentWrapper}>
           <Box sx={sideBarWrapper}>
             <Box sx={scrollListWrapper}>
               <SideList />
@@ -45,7 +54,7 @@ function App() {
           <Box sx={contentAreaWrapper}>
             <AppContentArea />
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </React.Fragment>
   );

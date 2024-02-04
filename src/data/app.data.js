@@ -7,20 +7,16 @@ import {
   BsCodeSlash,
   BsSun,
 } from 'react-icons/bs';
-import { TbBrandTinder } from 'react-icons/tb';
 import { SiReasonstudios } from 'react-icons/si';
 import { AiOutlineQuestionCircle } from 'react-icons/ai';
 import { FaRegMoon } from 'react-icons/fa';
 import { IoMdInformationCircleOutline } from 'react-icons/io';
 import { GiConsoleController } from 'react-icons/gi';
-import { VscCircuitBoard } from 'react-icons/vsc';
 import { CiUser } from 'react-icons/ci';
 import { BsChatRight } from 'react-icons/bs';
-import { FaShare } from 'react-icons/fa';
 import { FaRegArrowAltCircleUp } from 'react-icons/fa';
 import { FaCheckCircle, FaRegWindowClose } from 'react-icons/fa';
 import { FaRegArrowAltCircleDown } from 'react-icons/fa';
-import { MdOutlineSaveAlt } from 'react-icons/md';
 
 export const nestedList = [
   { id: 4, text: 'Best Communities' },
@@ -131,8 +127,8 @@ export const imageCardsItems = [
   },
   {
     id: 2,
-    header: 'New Ola electric chaging point',
-    subHeader: 'Ola setsup 20+ charging points in Indiranagar..',
+    header: 'New Ola electric chaging points',
+    subHeader: 'Ola added 20+ charging points in Indiranagar..',
     imageUrl: 'https://www.motorbeam.com/wp-content/uploads/Ola-Hypercharger.jpg',
     user: 's/Indiranagar',
     icon: <CiUser size={18} />,
