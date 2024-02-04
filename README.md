@@ -43,4 +43,4 @@ npm i --force
 npm start
 ```
 
-> ⚠ The UI server will be accessible at localhost:3000/login and localhost:3000/home
+> ⚠ The UI will be accessible at localhost:3000/login and localhost:3000/home
